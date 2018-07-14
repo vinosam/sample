@@ -1,0 +1,11 @@
+public class testcasewithoutpf {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+WebDriver driver=choosebrowser.selectbrowser("firefox", "http://newtours.demoaut.com");
+loginwithoutpf tc=new loginwithoutpf(driver);
+tc.login();
+tc.logout();
+	}
+
+}
