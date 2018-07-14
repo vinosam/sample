@@ -1,0 +1,10 @@
+public class testcasewithpf {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver=choosebrowser.selectbrowser("firefox", "http://newtours.demoaut.com");
+		loginwithpf tc=PageFactory.initElements(driver, loginwithpf.class);
+		tc.login();
+	}
+
+}
