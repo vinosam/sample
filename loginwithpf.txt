@@ -1,0 +1,20 @@
+public class loginwithpf {
+	@FindBy(how=How.NAME, using="userName")
+	@CacheLookup
+	WebElement user;
+	@FindBy(how=How.NAME,using="password")
+	@CacheLookup
+	WebElement pwd;
+	@FindBy(how=How.NAME,using="login")
+	@CacheLookup
+	WebElement login;
+
+
+	public void login()
+{
+	user.sendKeys("123");
+	pwd.sendKeys("123");
+	login.click();
+	
+	}
+	}v
