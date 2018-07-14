@@ -1,0 +1,26 @@
+public class loginwithoutpf {
+WebDriver driver;
+public loginwithoutpf(WebDriver d) 
+{
+	this.driver=d;
+}
+By user= By.name("userName");
+By password=By.name("password");
+By login=By.name("login");
+public void login()
+{
+	driver.findElement(user).sendKeys("123");
+	driver.findElement(password).sendKeys("123");
+	driver.findElement(login).submit();
+	
+}
+public void logout()
+
+{
+	By signoff=By.linkText("SIGN-OFF");
+driver.findElement(signoff).click();
+
+
+	
+}
+}
